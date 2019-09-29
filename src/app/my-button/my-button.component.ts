@@ -23,8 +23,8 @@ export class MyButtonComponent implements OnInit {
 
   onClick() {
     this.isLiked = this.service.likeImage(this.isLiked);
-    this.message = 'Button clicked';
-    console.log('button clicked');
+    this.message = 'Button clicked'; // for console
+    console.log(this.message);
   }
 
 }

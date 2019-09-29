@@ -1,2 +1,6 @@
-<div><button (click)="onClick()">Like</button> </div>
+<div>
+    <button
+        [ngClass] = "{ 'is-liked': isLiked }"
+        (click)="onClick()">Like</button> 
+</div>
 <span>Image is Liked == {{ isLiked }} </span>
