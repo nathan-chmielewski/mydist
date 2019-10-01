@@ -3,6 +3,12 @@
   <app-my-image></app-my-image>
   <app-my-button></app-my-button>
   <div>
-    
+    <ul>
+        <li style = "list-style-type:none;" 
+        *ngFor = "let message of messages.messages">
+            {{ message.text }}
+          {{message.timestamp.toLocaleString() }}
+        </li>
+    </ul>
   </div>
 </h1>

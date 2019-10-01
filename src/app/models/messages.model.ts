@@ -3,14 +3,14 @@ import { User } from './user.model';
 
 
 export class Messages {
-    public id: string;
+    // public id: string;
     public messages: Message[];
-    public users: User[];
+    // public users: User[];
 
-    constructor(id: string) {
+    constructor() {
         this.messages = [];
-        this.id = id;
-        this.users = [];
+        // this.id = id;
+        // this.users = [];
 
     }
 

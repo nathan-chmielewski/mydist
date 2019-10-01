@@ -1,5 +1,12 @@
 # Mydist
 
+1. 
+*Created my-image component, with no properties and no constructor. The template has a div tag to display the image. I was getting a browser error (CORB?) when using the img src url, so the image is stored in the project's asset folder, and is rendered using the img src tag
+*Created my-button component, which imports my-service service. The component has two properties: the service, and isLiked boolean. It has an onClick() method which is called when the 'Like' button is clicked. The method calls the my-service service and passes the isLiked boolean property.
+*The my-service service has a likeImage(..) method that takes boolean argument and returns the ! of the boolean. The returned boolean is stored in the my-button isLiked property.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
 ## Development server

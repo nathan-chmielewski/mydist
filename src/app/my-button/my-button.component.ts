@@ -10,12 +10,10 @@ export class MyButtonComponent implements OnInit {
   // properties
   isLiked: boolean;
   service: MyServiceService;
-  message: string;
 
   constructor() {
     this.isLiked = false;
     this.service = new MyServiceService();
-    this.message = '';
    }
 
   ngOnInit() {
@@ -23,8 +21,6 @@ export class MyButtonComponent implements OnInit {
 
   onClick() {
     this.isLiked = this.service.likeImage(this.isLiked);
-    this.message = 'Button clicked'; // for console
-    console.log(this.message);
   }
 
 }

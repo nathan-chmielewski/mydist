@@ -14,6 +14,8 @@ export class AppComponent {
 
   constructor() {
     // Import Messages service
+    this.service = new MessagesService();
+    this.messages = new Messages();
     this.messages = this.service.createMessages();
   }
 }
