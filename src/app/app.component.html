@@ -7,7 +7,7 @@
         <li style = "list-style-type:none;" 
         *ngFor = "let message of messages.messages">
             {{ message.text }}
-          {{message.timestamp.toLocaleString() }}
+          {{ message.timestamp.toLocaleString() }}
         </li>
     </ul>
   </div>

@@ -9,18 +9,18 @@ import { MyServiceService } from '../my-service.service';
 export class MyButtonComponent implements OnInit {
   // properties
   isLiked: boolean;
-  service: MyServiceService;
+  // service: MyServiceService;
 
-  constructor() {
+  constructor(public myService: MyServiceService) {
     this.isLiked = false;
-    this.service = new MyServiceService();
+    // this.service = new MyServiceService();
    }
 
   ngOnInit() {
   }
 
   onClick() {
-    this.isLiked = this.service.likeImage(this.isLiked);
+    this.isLiked = this.myService.likeImage(this.isLiked);
   }
 
 }

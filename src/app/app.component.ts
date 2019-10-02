@@ -9,14 +9,14 @@ import { Messages } from './models/messages.model';
 })
 export class AppComponent {
   title = 'mydist';
-  service: MessagesService;
+  // service: MessagesService;
   messages: Messages;
 
-  constructor() {
+  constructor(public messageService: MessagesService ) {
     // Import Messages service
-    this.service = new MessagesService();
+    // this.service = new MessagesService();
     this.messages = new Messages();
-    this.messages = this.service.createMessages();
+    this.messages = this.messageService.createMessages();
   }
 }
 

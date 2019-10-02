@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MyImageComponent } from './my-image/my-image.component';
 import { MyButtonComponent } from './my-button/my-button.component';
+import { MessagesService } from './messages.service';
+import { MyServiceService } from './my-service.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,7 @@ import { MyButtonComponent } from './my-button/my-button.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ MyServiceService, MessagesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
