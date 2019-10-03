@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Message } from './models/message.model';
 import { Messages } from './models/messages.model';
+import { IMessagesService } from './messages.service.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MessagesService {
+export class MessagesService implements IMessagesService {
 
   constructor() { }
 

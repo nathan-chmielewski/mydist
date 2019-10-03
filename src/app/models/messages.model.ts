@@ -1,17 +1,11 @@
+import { IMessages } from './messages.interface';
 import { Message } from './message.model';
-import { User } from './user.model';
 
-
-export class Messages {
-    // public id: string;
-    public messages: Message[];
-    // public users: User[];
+export class Messages implements IMessages {
+    private messages: Message[];
 
     constructor() {
         this.messages = [];
-        // this.id = id;
-        // this.users = [];
-
     }
 
     addMessage(message: Message) {

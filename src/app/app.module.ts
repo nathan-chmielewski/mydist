@@ -16,7 +16,7 @@ import { MyServiceService } from './my-service.service';
   imports: [
     BrowserModule
   ],
-  providers: [ MyServiceService, MessagesService ],
+  providers: [MyServiceService, MessagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

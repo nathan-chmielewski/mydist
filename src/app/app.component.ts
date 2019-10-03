@@ -12,7 +12,7 @@ export class AppComponent {
   // service: MessagesService;
   messages: Messages;
 
-  constructor(public messageService: MessagesService ) {
+  constructor(private messageService: MessagesService ) {
     // Import Messages service
     // this.service = new MessagesService();
     this.messages = new Messages();

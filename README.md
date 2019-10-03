@@ -1,10 +1,13 @@
 # Mydist
 
 1. 
-*Created my-image component, with no properties and no constructor. The template has a div tag to display the image. I was getting a browser error (CORB?) when using the img src url, so the image is stored in the project's asset folder, and is rendered using the img src tag
-*Created my-button component, which imports my-service service. The component has two properties: the service, and isLiked boolean. It has an onClick() method which is called when the 'Like' button is clicked. The method calls the my-service service and passes the isLiked boolean property.
-*The my-button template creates a button element and uses the ngClass to style the button with the is-liked css class.
-*The my-service service has a likeImage(..) method that takes boolean argument and returns the ! of the boolean. The returned boolean is stored in the my-button isLiked property.
+* Created my-image component, with no properties and no constructor. The template has a div tag to display the image. I was getting a browser error (CORB?) when using the img src url, so the image is stored in the project's asset folder, and is rendered using the img src tag
+* Created my-button component, which imports my-service service. The component has two properties: the service, and isLiked boolean. It has an onClick() method which is called when the 'Like' button is clicked. The method calls the my-service service and passes the isLiked boolean property.
+* The my-button template creates a button element and uses the ngClass to style the button with the is-liked css class.
+* The my-service service has a likeImage(..) method that takes boolean argument and returns the ! of the boolean. This method is called by the my-button component when the button is clicked, passing its isLiked boolean property. The returned boolean is stored in the my-button isLiked property.
+*The my-button renders 'Image is liked == {{ isLiked }} under an image of Homer.
+2.
+* *the button element so that when the button is clicked, the my-button component member isLiked flips (to true on the first click and every other click after), and the button turns green on 'true'.
 *
 
 
